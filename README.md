@@ -1,45 +1,17 @@
-React Boilerplate
+W6D1 - React Breakout
 =====================
 
-A minimal and light dev environment for ReactJS.
+For today's breakout, we reviewed some of the concepts that we learned in this morning's lecture. Then we did a rapid prototype of a Kanye West Soundboard website.
 
-### Usage
+The things to keep in mind were:
 
-Clone the boilerplate and create your own git repo.
+- React is a framework for building the front-end of web applications
+- The main abstraction in React is the use of *components*.
+- **Components** take *props* and have *state*. Props can be anything! Values like strings, numbers, objects, or even functions. We can use state to hold data that we want to display (e.g. the `kanyes` in our example), information about user data (e.g. `loggedIn`), or information about the "state" of the component (e.g. `isLoaded`).
+- Data flows *down*!
 
-```
-git clone git@github.com:lighthouse-labs/react-simple-boilerplate.git
-cd react-simple-boilerplate
-git remote rm origin
-git remote add origin [YOUR NEW REPOSITORY]
-# Manually update your package.json file
-```
+We started off by drawing a wireframe of the application that we wanted to build, and isolated each required component. These were things like the Logo, the KanyeContainer, the NewKanyeForm, etc. Once we had identified those components from the wireframe, we drew a tree to understand the structure of how we would nest our components, and how the flow of props would be handled.
 
-Install the dependencies and start the server.
+Once the whiteboarding was done, it was a matter of writing the code! Check inside the `src` folder to see the code we wrote. Remember that to have one component affect a parent or sibling component, we need to use callbacks! Look at how adding new "Kanyes" works inside the `NewKanyeForm` for that, and follow the props upp to `App.jsx`.
 
-```
-npm install
-npm start
-open http://localhost:3000
-```
-
-### Static Files
-
-You can store static files like images, fonts, etc in the `build` folder.
-
-For example, if you copy a file called my_image.png into the build folder you can access it using `http://localhost:3000/build/my_image.png`.
-
-### Linting
-
-This boilerplate project includes React ESLint configuration.
-
-```
-npm run lint
-```
-
-### Dependencies
-
-* React
-* Webpack
-* [babel-loader](https://github.com/babel/babel-loader)
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+Enjoy! - Nima
