@@ -1,6 +1,8 @@
 W6D1 - React Breakout
 =====================
 
+REPO: https://github.com/NimaBoscarino/react-breakout-notes
+
 For today's breakout, we reviewed some of the concepts that we learned in this morning's lecture. Then we did a rapid prototype of a Kanye West Soundboard website.
 
 The things to keep in mind were:
