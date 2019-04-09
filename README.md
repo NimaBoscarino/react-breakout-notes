@@ -3,6 +3,15 @@ W6D1 - React Breakout
 
 REPO: https://github.com/NimaBoscarino/react-breakout-notes
 
+To run the example:
+
+```
+npm i
+npm start
+```
+
+Then go to `http://localhost:3000`. You can see the code in `src/App.jsx`.
+
 For today's breakout, we reviewed some of the concepts that we learned in this morning's lecture. We built on what we learned this morning, looking at how components store and get their data, namely `state` and `props`. 
 
 We built ourselves a button clicker app, that counted how many times we had clicked on a button. Then we did a bit of messing around with creating Kanye components.
