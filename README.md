@@ -3,17 +3,23 @@ W6D1 - React Breakout
 
 REPO: https://github.com/NimaBoscarino/react-breakout-notes
 
-For today's breakout, we reviewed some of the concepts that we learned in this morning's lecture. Then we did a rapid prototype of a Kanye West Soundboard website.
+For today's breakout, we reviewed some of the concepts that we learned in this morning's lecture. We built on what we learned this morning, looking at how components store and get their data, namely `state` and `props`. 
+
+We built ourselves a button clicker app, that counted how many times we had clicked on a button. Then we did a bit of messing around with creating Kanye components.
+
+In the process, we learned about a few different concepts:
+
+* `state` vs `props`
+* JSX syntax in props
+* Using `.bind(this)` for event handlers, and why that was
+* Functional components vs Class components (read this [article](https://overreacted.io/how-are-function-components-different-from-classes/))
+* Iterating over a list and rendering components for each element
+* The `key` attribute
+* Some [other attributes](https://reactjs.org/docs/dom-elements.html) that React treats differently
 
 The things to keep in mind were:
 
 - React is a framework for building the front-end of web applications
 - The main abstraction in React is the use of *components*.
 - **Components** take *props* and have *state*. Props can be anything! Values like strings, numbers, objects, or even functions. We can use state to hold data that we want to display (e.g. the `kanyes` in our example), information about user data (e.g. `loggedIn`), or information about the "state" of the component (e.g. `isLoaded`).
-- Data flows *down*!
 
-We started off by drawing a wireframe of the application that we wanted to build, and isolated each required component. These were things like the Logo, the KanyeContainer, the NewKanyeForm, etc. Once we had identified those components from the wireframe, we drew a tree to understand the structure of how we would nest our components, and how the flow of props would be handled.
-
-Once the whiteboarding was done, it was a matter of writing the code! Check inside the `src` folder to see the code we wrote. Remember that to have one component affect a parent or sibling component, we need to use callbacks! Look at how adding new "Kanyes" works inside the `NewKanyeForm` for that, and follow the props upp to `App.jsx`.
-
-Enjoy! - Nima
